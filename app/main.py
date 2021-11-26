@@ -16,5 +16,5 @@ def detail():
       detail['Major'] = request.form.get('Major')
       return render_template("detail.html",detail = detail)
 
-if __name__ == '__main__':
-    app.run()
+if __name__ == '__main__': 
+    app.run(host="52.78.156.130")
