@@ -13,8 +13,9 @@ def detail():
       detail['Name'] = request.form.get('Name')
       detail['StudentNumber'] = request.form.get('StudentNumber')
       detail['Gender'] = request.form.get('Gender')
-      detail['Major'] = request.form.get('Major')
+      detail['Major'] = request.form.get(ｓ'Major')
       return render_template("detail.html",detail = detail)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=True, port=80)
+    app.run(host="52.78.156.130", debug=True, port=80)
+
