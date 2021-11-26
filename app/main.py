@@ -17,6 +17,6 @@ def detail():
       return render_template("detail.html",detail = detail)
 
 if __name__ == '__main__': 
-    app.run(host="52.78.156.130＂, debug=True）
+    app.run(host="52.78.156.130＂, debug=True, port=80）
 
 
