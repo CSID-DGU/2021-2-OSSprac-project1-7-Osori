@@ -5,7 +5,7 @@ data = dict()
 
 @app.route('/')
 def student():
-   return render_template('main.html')
+   return render_template('main.html', data = data)
 
 @app.route('/detail', methods = ['POST', 'GET'])
 def detail():
