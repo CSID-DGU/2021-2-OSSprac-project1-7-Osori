@@ -3,7 +3,7 @@
    <body>
    
       <table border = 1>
-         {% for key, value in detail.items() %}
+         {% for key, value in data.items() %}
          
             <tr>
                <th> {{ key }} </th>
@@ -12,6 +12,9 @@
             
          {% endfor %}
       </table>
-      
+      <form action = "/">
+         <input type = "submit" value = "MODIFY"/>
+         <input type = "submit" value = "SUBMIT" formaction="/result"/>
+      </form>
    </body>
 </html>
