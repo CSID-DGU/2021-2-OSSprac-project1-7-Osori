@@ -19,12 +19,11 @@ def detail():
 @app.route('/result', methods = ['POST', 'GET'])
 def result():
    if request.method == 'POST':
-      result = dict()
-      result['Name'] = request.form.get('Name')
-      result['StudentNumber'] = request.form.get('StudentNumber')
-      result['Gender'] = request.form.get('Gender')
-      result['Major'] = request.form.get('Major')
-      return render_template("result.html",result = result)
+      data['Name'] = request.form.get('Name')
+      data['StudentNumber'] = request.form.get('StudentNumber')
+      data['Gender'] = request.form.get('Gender')
+      data['Major'] = request.form.get('Major')
+      return render_template("result.html",data = data)
 
 if __name__ == '__main__': 
     app.run(host="0.0.0.0", debug=True, port=80)
