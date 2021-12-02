@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <body>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>OSSP-survey</title>
+   </head>
+    <h1> 소프트웨어 특강 참여 신청 양식 </h1>
+    <body>
+      <form action = "/submit" method = "POST">
+        이름 : <input type ="text" name ="uname" value=""><br>
+        학과 : <input type ="text" name="umajor" value=""><br>
+        학년 :
+        <div>
+         <input type="radio" name ="grade" value="1학년">1학년
+         <input type="radio" name ="grade" value="2학년">2학년
+         <input type="radio" name ="grade" value="3학년">3학년
+         <input type="radio" name ="grade" value="4학년">4학년<br>
+         </div>
+         수강 희망 언어 : <input type="radio" name="lan" value="C">C 
+         <input type="radio" name="수강 희망 언어" value="C++">C++ 
+         <input type="radio" name="수강 희망 언어" value="Python">Python 
+         <input type="radio" name="수강 희망 언어" value="Java">Java<br>
+         참여 희망 요일 : <selct>
+            <option value="day">월요일</option>
+            <option value="day">화요일</option>
+            <option value="day">수요일</option>
+            <option value="day">목요일</option>
+            <option value="day">금요일</option>
+         </selct><br>
+      참여 희망 이유 : <br><textarea name ="" id="" cols="30" rows="10"></textarea>
+
+      <input type="submit" name="제출">
+      </form>
+   </body>
+</html>
