@@ -1,20 +1,27 @@
 <!doctype html>
 <html>
    <body>
-   
-      <table border = 1>
-         {% for key, value in data.items() %}
-         
+      <form id="detailform" action = "/result" method = "POST">
+         <table border = 1>
             <tr>
-               <th> {{ key }} </th>
-               <td> {{ value }} </td>
+               <th> Name </th>
+               <td><input type = "text" name = "Name" value="{{ data['Name'] }}" readonly/></td>
             </tr>
-            
-         {% endfor %}
-      </table>
-      <form action = "/">
-         <input type = "submit" value = "MODIFY"/>
-         <input type = "submit" value = "SUBMIT" formaction="/result"/>
+            <tr>
+               <th> StudentNumber </th>
+               <td><input type = "text" name = "StudentNumber" value="{{ data['StudentNumber'] }}" readonly/></td>
+            </tr>
+            <tr>
+               <th> Gender </th>
+               <td><input type = "text" name = "Gender" value="{{ data['Gender'] }}" readonly/></td>
+            </tr>
+            <tr>
+               <th> Major </th>
+               <td><input type = "text" name = "Major" value="{{ data['Major'] }}" readonly/></td>
+            </tr>
+         </table>
       </form>
+      <input type="button" value="MODIFY" onClick="history.go(-1)">
+      <input type = "submit" value = "SUBMIT" form="detailform"/>
    </body>
 </html>

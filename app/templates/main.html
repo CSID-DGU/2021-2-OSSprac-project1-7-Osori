@@ -2,13 +2,13 @@
 <html>
    <body>
    
-      <form action = "/detail" method = "POST">
-         <p>Name <input type = "text" name = "Name" value="{{ data['Name'] }}" /></p>
-         <p>Student Number <input type = "text" name = "StudentNumber" value="{{ data['StudentNumber'] }}"/></p>
+      <form action = "/detail" method = "POST" autocomplete="on">
+         <p>Name <input type = "text" name = "Name"/></p>
+         <p>Student Number <input type = "text" name = "StudentNumber"/></p>
          <p>Gender</p>
             <label><input id="Male" type="radio" name="Gender" value="Male"/>Male</label>
             <label><input id="Female" type="radio" name="Gender" id="Female" value="Female"/>Female</label>
-         <p>Major <input type = "text" name = "Major" value="{{ data['Major'] }}"/></p>
+         <p>Major <input type = "text" name = "Major"/></p>
        <p><input type = "submit" value = "check" /></p>
       </form>
 
