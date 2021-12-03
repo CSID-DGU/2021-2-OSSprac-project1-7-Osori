@@ -1,5 +1,9 @@
 <from action = ""method = post>
     <d1>
+        { % if error %}
+        <p><strong>Error:</strong> {{ error }}
+        % endif %
+
         <dt> 아이디 :</dt>
         <dd>
             <input type = "text" name ="username"
@@ -8,9 +12,6 @@
         <dt>비밀번호 : </dt>
         <dd><input type ="password" name = "password" ></dd>
        
-        { % if error %}
-        <p><strong>Error:</strong> {{ error }}
-        % endif %
         <d1>
         <p><input type = "submit" value ="Login"></p>
     
